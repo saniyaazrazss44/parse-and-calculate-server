@@ -14,7 +14,7 @@ router.post('/addCSV', upload.single('file'), async (req, res) => {
     if (!req.file) {
         return res.status(400).json({
             status: 400,
-            message: "No file uploaded."
+            message: "No file uploaded. Please upload a file"
         });
     }
 
