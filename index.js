@@ -30,17 +30,9 @@ app.get('/health', (req, res) => {
 })
 
 // Import routes
-// const authRoute = require("./routes/auth")
-// const storyRoute = require("./routes/storyRoutes")
-// const likeRoute = require("./routes/likesRoutes")
-// const bookmarkRoute = require("./routes/bookmarksRoutes")
-// const shareRoute = require("./routes/shareRoutes")
-
-// app.use('/api', authRoute)
-// app.use('/api/story', storyRoute)
-// app.use('/api/like', likeRoute)
-// app.use('/api/bookmark', bookmarkRoute)
-// app.use('/api/share', shareRoute)
+const tradeRoute = require("./routes/tradeRoute")
+ 
+app.use('/api', tradeRoute) 
 
 // Start server
 const startServer = async () => {
